@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> </title>
+	<link rel="stylesheet" type="text/css" href="wp.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+	<header>
+<div class="navbarleft" id="Home">	 <img src="index.jpg" width="80px" > </div>
+			
+			<div class="navbar" >
+					<a href="#Home">Home</a>
+					<a href="#aubook">About Us</a>
+					<a href="glry.html">Gallery</a>
+					<a href="#attr">Attractions</a>
+					<a href="#cu">Contact Us</a>
+					<a href="#">Services</a>
+					<a href="formvalid.html">Online Booking</a>
+
+			</div>			
+	</header>
+
+<br><br><br><br><br>
+
+<div class="slideshow">
+   <div>
+     <img src="banner1.jpg" width="100%" height="600px" >
+   </div>
+   <div>
+     <img src="banner2.jpg" width="100%" height="600px">
+   </div>
+   <div>
+     <img src="banner3.jpg" width="100%" height="600px">
+   </div>
+   <div>
+     <img src="banner4.jpg" width="100%" height="600px">
+   </div>
+   <div>
+     <img src="banner5.jpg" width="100%" height="600px">
+	</div>
+	<div>
+     <img src="banner6.jpg" width="100%" height="600px">
+	</div>
+	<div>
+     <img src="banner7.jpg" width="100%" height="600px">
+	</div>
+	<div>
+     <img src="banner9.jpg" width="100%" height="600px">
+	</div>
+	<div>
+     <img src="banner10.jpg" width="100%" height="600px">
+	</div>
+
+</div><br><br><br><br><br id="aubook"><br>
+<br>
+<br>
+<br>
+
+<div class="au">
+<h1 align="left" >About Us</h1>
+<p class="aboutusright" align="right">Gujarat is the 6th largest state in India, located in the western part of India with a coastline of 1600 km (longest in India). It is one of the most popular tourist regions in the country and was visited by 20 million domestic and international tourists in 2010-11.<br><br><br> place to view pure Asiatic lions in the world.During the Sultanate reign, Hindu craftsmanship mixed with Islamic architecture, giving rise to the Indo-Saracenic style. <br><br><br> Amitabh Bachchan is currently the brand ambassador of Gujarat Tourism. There are many Indian and global companies located in Gujarat and the area has seen double digit GDP growth in past decade. It is also known as "Growth Engine of India".<br><br><br>It is also the birthplace of Shrimad Rajchandra, Mahatma Gandhi and Sardar Vallabhbhai Patel, iconic figures of India's independence movement.</p>
+</div>
+<br><br id="attr"><br><br><br>
+
+
+
+<div class="Attractions">
+			<h1>Attractions</h1>
+			<br>
+			<div class="row">
+				<div class="column">
+					<img src="gir.jpg">
+					<div class="text"><p>Gir National Park and Wildlife Sanctuary also known as Sasan Gir, is a forest and wildlife sanctuary near Talala Gir in Gujarat, India. </p></div>
+				</div>
+				<div class="column">
+						<img src="r.jpg">
+						<div class="text"><p>The Rann of Kutch is a large area of salt marshes located mostly in Gujarat (primarily the Kutch district), India and the southern tip of Sindh, Pakistan.</p> </div>
+				</div>
+				<div class="column">
+						<img src="mandvi.jpg">
+						<div class="text"><p>Mandvi is a town with municipality in Kutch district in the Indian state of Gujarat.  The old city was enclosed in the fort wall and remains of the fort wall can still be seen. </p></div>
+				</div>
+				<div class="column">
+					<img src="b.jpg">
+					<div class="text"><p>According to legend, Kutch was ruled by the Nāga chieftains in the past. Sagai, a queen of Sheshapattana, rose up against Bhujanga.</p></div>
+				</div>
+			</div>
+		</div>
+
+<img src="end.jpg" width="100%" height="450px">
+<br>
+<br>
+<br>
+<br>
+			<footer class="footer-distributed" id="cu">
+ 
+			<div class="footer-left">
+          <img src="index.jpg">
+				<h3>Gujrat<span>Tourism</span></h3>
+ 
+				<p class="footer-links">
+					<a href="#Home">Home</a>
+					|
+					<a href="glry.html">Gallery</a>
+					|
+					<a href="#aubook">About</a>
+					|
+					<a href="#Contact">Contact</a>
+				</p>
+			</div>
+ 
+			<div class="footer-center">
+				<div>
+					<i class="fa fa-map-marker"></i>
+					  <p><span>111- Rupa Solitaire,
+						 Bldg. No. A - 1, Sector - 1</span>
+						 Kolkata - 700001</p>
+				</div>
+ 
+				<div>
+					<i class="fa fa-phone"></i>
+					<p>+91 9123363XXX</p>
+				</div>
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="https://mail.google.com">tayansinha@gmail.com</a></p>
+				</div>
+			</div>
+			<div class="footer-right">
+				<p class="footer-company-about">
+					<span>Contact us on</span>
+					
+				<div class="footer-icons">
+					<a href="https://www.facebook.com/"><img src="facebook.png" width="40px"></a>
+					<a href="https://twitter.com/login"><img src="twitter.png" width="40px"></a>
+					<a href="https://www.instagram.com/"><img src="instagram.png" width="40px"></a>
+					<a href="https://mail.google.com"><img src="gmail.png" width="40px"></a>
+					<a href="https://www.youtube.com"><img src="youtube.png" width="40px"></a>
+				</div>
+			</div>
+		</footer>
+
+
+
+<script>
+$(".slideshow > div:gt(0)").hide();
+
+setInterval(function() { 
+  $('.slideshow > div:first')
+    .hide(1000)
+    .next()
+    .show(1000)
+    .end()
+    .appendTo('.slideshow');
+},  3000);
+</script>
+
+</body>
+</html>
