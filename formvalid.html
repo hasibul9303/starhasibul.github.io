@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Validation</title>
+	<style type="text/css">
+
+h1
+{
+	color: red;
+	font-family: cursive;
+	font-size: 50px;
+	margin-top: 10px;
+}
+
+input[type=text]
+{
+	display: block;
+	padding: 25px;
+	text-align: center;
+	border-radius: 10px;
+	border: 5px solid blue;
+	width: 350px;
+}
+input[type=text]:hover
+{
+	box-shadow: 0 10px 18px 0 rgb(0,0,0,0.9);
+	 font-size: 25px;
+	 border-color: red;
+}
+input[type=submit]
+{
+	display: inline-block;
+	background-color: green;
+	text-align: center;
+	font-size: 30px;
+	border-radius: 45px;
+	transform: translateY(6px);
+	cursor: pointer;
+}
+input[type=submit]:hover
+{
+	 box-shadow: 0 10px 18px 0 rgb(0,0,0,0.9);
+	 font-size: 40px;
+}
+.cont
+		{
+			float: right;
+			width: 30px;
+			margin-right: 60px;
+			text-align: center;
+			color: #FFFFFF;
+		}
+.cont img:hover
+		{
+				box-shadow: 0 20px 20px 0 rgb(0,0,0,5);
+				width: 50px;
+				border-radius: 50%;
+		}
+	</style>
+	 <script type="text/javascript">
+		function FormData()
+		{
+			var firstname=document.forms["Valid"]["fname"];
+			var address=document.forms["Valid"]["add"];
+			var phone=document.forms["Valid"]["num"];
+			var mail=document.forms["Valid"]["email"];
+			//var d=document.forms["valid"]["date"];
+		
+			if(firstname.value=="")
+			{
+				window.alert("Enter your full name");
+				firstname.focus();
+				return false;
+			}
+			if (address.value== "")
+			{
+				window.alert("Please Enter your address");
+				address.focus();
+				return false;
+			}
+
+			if (phone.value== "")
+			{
+				window.alert("Please Enter your phone number");
+				phone.focus();
+				return false;
+			}
+
+			if (mail.value== "")
+			{
+				window.alert("Please Enter your email id");
+				mail.focus();
+				return false;
+			}
+
+			if(mail.value.indexOf('@')<0)
+			{
+				window.alert("Invalid email id");
+				mail.focus();
+				return false;
+			}
+
+			if(mail.value.indexOf(".com")<0)
+			{
+				window.alert("Invalid email id");
+				mail.focus();
+				return false;
+			}
+			// if(d.value=="")
+			// {
+			// 	window.alert("Enter the date of arrival");
+			// 	d.focus();
+			// 	return false;
+			// }
+
+		}
+	</script>
+</head>
+<body background="banner7.jpg"> <center>
+	<h1>Online Booking Portal</h1><br>
+	
+		
+			<form name="Valid" method="POST" onsubmit="return FormData()">
+					<input type="text" name="fname" placeholder="Enter your full name"><br>
+					<input type="text" name="add" placeholder="Enter your address"><br>
+					<input type="text" name="num" placeholder="Enter your phone number"><br>
+					<input type="text" name="email" placeholder="Enter your email id"><br>
+					<input type="text" name="date" placeholder="Enter date of arrival">
+					<br>
+					<div class="button">
+					<input type="submit" name="signup" value="Submit">	
+					</div>		
+			</form>
+
+
+			<div class="cont">
+					<a href="#"><img src="facebook.png" width="40px"></a>
+					<a href="#"><img src="twitter.png" width="40px"></a>
+					<a href="#"><img src="instagram.png" width="40px"></a>
+					<a href="#"><img src="gmail.png" width="40px"></a>
+					<a href="#"><img src="youtube.png" width="40px"></a>
+				</div>
+		
+</body>
+</html>
